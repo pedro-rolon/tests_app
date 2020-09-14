@@ -15,6 +15,14 @@
 		FAFA69A0250B2FDA007D3694 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAFA699E250B2FDA007D3694 /* LaunchScreen.storyboard */; };
 		FAFA69AB250B2FDA007D3694 /* tests_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFA69AA250B2FDA007D3694 /* tests_appTests.swift */; };
 		FAFA69B6250B2FDA007D3694 /* tests_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFA69B5250B2FDA007D3694 /* tests_appUITests.swift */; };
+		FAFA69C4250B328D007D3694 /* ViewControllersKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFA69C3250B328D007D3694 /* ViewControllersKeys.swift */; };
+		FAFA69C7250B3577007D3694 /* MenuTestOptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAFA69C6250B3577007D3694 /* MenuTestOptionCell.xib */; };
+		FAFA69C9250B3592007D3694 /* MenuTestOptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFA69C8250B3592007D3694 /* MenuTestOptionCell.swift */; };
+		FAFA69CB250E90D2007D3694 /* TestAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFA69CA250E90D2007D3694 /* TestAccess.swift */; };
+		FAFA69D6250EAB25007D3694 /* MainMenuPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFA69D5250EAB25007D3694 /* MainMenuPresenter.swift */; };
+		FAFA69D8250EACD9007D3694 /* MenuView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAFA69D7250EACD9007D3694 /* MenuView.storyboard */; };
+		FAFA69DA250EACF3007D3694 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFA69D9250EACF3007D3694 /* MenuView.swift */; };
+		FAFA69DE250EB606007D3694 /* MenuRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFA69DD250EB606007D3694 /* MenuRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +57,14 @@
 		FAFA69B1250B2FDA007D3694 /* tests_appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tests_appUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAFA69B5250B2FDA007D3694 /* tests_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tests_appUITests.swift; sourceTree = "<group>"; };
 		FAFA69B7250B2FDA007D3694 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAFA69C3250B328D007D3694 /* ViewControllersKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllersKeys.swift; sourceTree = "<group>"; };
+		FAFA69C6250B3577007D3694 /* MenuTestOptionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuTestOptionCell.xib; sourceTree = "<group>"; };
+		FAFA69C8250B3592007D3694 /* MenuTestOptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTestOptionCell.swift; sourceTree = "<group>"; };
+		FAFA69CA250E90D2007D3694 /* TestAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAccess.swift; sourceTree = "<group>"; };
+		FAFA69D5250EAB25007D3694 /* MainMenuPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuPresenter.swift; sourceTree = "<group>"; };
+		FAFA69D7250EACD9007D3694 /* MenuView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MenuView.storyboard; sourceTree = "<group>"; };
+		FAFA69D9250EACF3007D3694 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		FAFA69DD250EB606007D3694 /* MenuRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +115,14 @@
 		FAFA6992250B2FD9007D3694 /* tests_app */ = {
 			isa = PBXGroup;
 			children = (
+				FAFA6999250B2FD9007D3694 /* Main.storyboard */,
+				FAFA6997250B2FD9007D3694 /* ViewController.swift */,
 				FAFA6993250B2FD9007D3694 /* AppDelegate.swift */,
 				FAFA6995250B2FD9007D3694 /* SceneDelegate.swift */,
-				FAFA6997250B2FD9007D3694 /* ViewController.swift */,
-				FAFA6999250B2FD9007D3694 /* Main.storyboard */,
 				FAFA699C250B2FDA007D3694 /* Assets.xcassets */,
 				FAFA699E250B2FDA007D3694 /* LaunchScreen.storyboard */,
 				FAFA69A1250B2FDA007D3694 /* Info.plist */,
+				FAFA69C5250B32DD007D3694 /* Main Application */,
 			);
 			path = tests_app;
 			sourceTree = "<group>";
@@ -126,6 +143,53 @@
 				FAFA69B7250B2FDA007D3694 /* Info.plist */,
 			);
 			path = tests_appUITests;
+			sourceTree = "<group>";
+		};
+		FAFA69C5250B32DD007D3694 /* Main Application */ = {
+			isa = PBXGroup;
+			children = (
+				FAFA69DC250EB5F8007D3694 /* repository */,
+				FAFA69D4250EA99F007D3694 /* Model */,
+				FAFA69D3250EA992007D3694 /* View */,
+				FAFA69D2250EA985007D3694 /* Presenter */,
+			);
+			path = "Main Application";
+			sourceTree = "<group>";
+		};
+		FAFA69D2250EA985007D3694 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				FAFA69D5250EAB25007D3694 /* MainMenuPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		FAFA69D3250EA992007D3694 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FAFA69D7250EACD9007D3694 /* MenuView.storyboard */,
+				FAFA69D9250EACF3007D3694 /* MenuView.swift */,
+				FAFA69C6250B3577007D3694 /* MenuTestOptionCell.xib */,
+				FAFA69C8250B3592007D3694 /* MenuTestOptionCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FAFA69D4250EA99F007D3694 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FAFA69C3250B328D007D3694 /* ViewControllersKeys.swift */,
+				FAFA69CA250E90D2007D3694 /* TestAccess.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FAFA69DC250EB5F8007D3694 /* repository */ = {
+			isa = PBXGroup;
+			children = (
+				FAFA69DD250EB606007D3694 /* MenuRepository.swift */,
+			);
+			path = repository;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,7 +296,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAFA69D8250EACD9007D3694 /* MenuView.storyboard in Resources */,
 				FAFA69A0250B2FDA007D3694 /* LaunchScreen.storyboard in Resources */,
+				FAFA69C7250B3577007D3694 /* MenuTestOptionCell.xib in Resources */,
 				FAFA699D250B2FDA007D3694 /* Assets.xcassets in Resources */,
 				FAFA699B250B2FD9007D3694 /* Main.storyboard in Resources */,
 			);
@@ -260,7 +326,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAFA6998250B2FD9007D3694 /* ViewController.swift in Sources */,
+				FAFA69DE250EB606007D3694 /* MenuRepository.swift in Sources */,
+				FAFA69DA250EACF3007D3694 /* MenuView.swift in Sources */,
+				FAFA69CB250E90D2007D3694 /* TestAccess.swift in Sources */,
 				FAFA6994250B2FD9007D3694 /* AppDelegate.swift in Sources */,
+				FAFA69D6250EAB25007D3694 /* MainMenuPresenter.swift in Sources */,
+				FAFA69C9250B3592007D3694 /* MenuTestOptionCell.swift in Sources */,
+				FAFA69C4250B328D007D3694 /* ViewControllersKeys.swift in Sources */,
 				FAFA6996250B2FD9007D3694 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -444,7 +516,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "ballustra.test.tests-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -462,7 +534,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "ballustra.test.tests-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
